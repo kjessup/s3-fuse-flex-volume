@@ -3,6 +3,9 @@ kind: DaemonSet
 metadata:
   name: s3-fuse-flex-volume-deployer
 spec:
+  selector:
+    matchLabels:
+      name: s3-fuse-flex-volume-deployer
   updateStrategy:
     type: RollingUpdate
   template:
