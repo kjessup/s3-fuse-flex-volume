@@ -3,4 +3,4 @@ image:
   tag: latest
   pullPolicy: Always
 flexVolume:
-  pluginDir: /usr/libexec/kubernetes/kubelet-plugins/volume/exec/
+  pluginDir: /var/lib/kubelet/volumeplugins #/usr/libexec/kubernetes/kubelet-plugins/volume/exec/
