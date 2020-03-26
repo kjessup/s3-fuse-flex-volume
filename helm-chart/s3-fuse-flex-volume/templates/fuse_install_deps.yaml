@@ -19,6 +19,15 @@ data:
     }
 
 
+    run_ubuntu() {
+        apt-get update
+        apt-get install -y fuse python3-pip git
+        pip3 install git+git://github.com/met-office-lab/pysssix.git@big_cache
+        curl -L -o /usr/bin/goofys http://bit.ly/goofys-latest
+        chmod +x /usr/bin/goofys
+    }
+
+
     run_debian() {
         apt-get update
         apt-get install -y fuse python3-pip git
@@ -47,6 +56,10 @@ data:
 
         debian)
             run_debian
+        ;;
+
+        ubuntu)
+            run_ubuntu
         ;;
 
         *)
