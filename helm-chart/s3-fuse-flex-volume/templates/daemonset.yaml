@@ -10,9 +10,8 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      name: s3-fuse-flex-volume-deployer
       labels:
-        app: s3-fuse-flex-volume-deployer
+        name: s3-fuse-flex-volume-deployer
       annotations:
         checksum/config-map: {{ include (print .Template.BasePath "/fuse_install_deps.yaml") . | sha256sum }}
     spec:
