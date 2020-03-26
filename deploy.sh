@@ -20,5 +20,3 @@ done
 
 echo "Listing installed drivers:"
 ls -l /flexmnt
-echo "Goofys"
-which goofys

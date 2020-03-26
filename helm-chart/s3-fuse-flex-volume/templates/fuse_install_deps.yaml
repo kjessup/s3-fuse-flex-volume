@@ -25,6 +25,7 @@ data:
         pip3 install git+git://github.com/met-office-lab/pysssix.git@big_cache
         curl -L -o /usr/bin/goofys http://bit.ly/goofys-latest
         chmod +x /usr/bin/goofys
+        which goofys
     }
 
 
@@ -34,6 +35,7 @@ data:
         pip3 install git+git://github.com/met-office-lab/pysssix.git@big_cache
         curl -L -o /usr/bin/goofys http://bit.ly/goofys-latest
         chmod +x /usr/bin/goofys
+        which goofys
     }
 
 
@@ -43,6 +45,7 @@ data:
         pip3 install git+git://github.com/met-office-lab/pysssix.git@big_cache
         curl -L -o /usr/bin/goofys http://bit.ly/goofys-latest
         chmod +x /usr/bin/goofys
+        which goofys
     }
 
 
