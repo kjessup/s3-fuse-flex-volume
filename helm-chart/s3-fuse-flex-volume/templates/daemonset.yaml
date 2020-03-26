@@ -15,6 +15,7 @@ spec:
       annotations:
         checksum/config-map: {{ include (print .Template.BasePath "/fuse_install_deps.yaml") . | sha256sum }}
     spec:
+      hostNetwork: true
       initContainers:
         - name: install-host-deps
           image: busybox:latest
