@@ -84,7 +84,7 @@ func Mount(target string, options map[string]string) interface{} {
 		exec.Command("rm", "-rf", mountPath).Run()
 		os.MkdirAll(mountPath, 0755)
 		
-		mountCmd := exec.Command("goofys", args...)
+		mountCmd := exec.Command("/usr/bin/goofys", args...)
 		mountCmd.Env = os.Environ()
 		if accessKey, ok := options["access-key"]; ok {
 			mountCmd.Env = append(mountCmd.Env, "AWS_ACCESS_KEY_ID=" + accessKey)

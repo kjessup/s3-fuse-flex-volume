@@ -1,6 +1,8 @@
 image:
-  repository: informaticslab/s3-fuse-flex-volume
+  repository: docker.io/badthing/s3-fuse-flex-volume
   tag: latest
   pullPolicy: Always
 flexVolume:
-  pluginDir: /var/lib/kubelet/volumeplugins #/usr/libexec/kubernetes/kubelet-plugins/volume/exec/
+  pluginDir: /var/lib/kubelet/volumeplugins 
+  # rancher default location used above 
+  # standard kube default: /usr/libexec/kubernetes/kubelet-plugins/volume/exec/
